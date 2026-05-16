@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Industrial Park Animation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="scene">
+    <header class="ui">
+      <div>
+        <strong>Automatisierter Industriepark</strong>
+        <p>Vogelperspektive, kontinuierliche Lieferketten und futuristischer KI-Hub.</p>
+      </div>
+      <div class="legend">
+        <span class="dot blue"></span>Produktionshallen
+        <span class="dot purple"></span>Servergebäude
+        <span class="dot lime"></span>KI-Fabrik
+        <span class="dot yellow"></span>Transportpakete
+      </div>
+    </header>
+
+    <div class="campus" aria-label="3D Unternehmensmodell">
+      <div class="ground"></div>
+      <div class="grid"></div>
+
+      <div class="path path-a"></div>
+      <div class="path path-b"></div>
+      <div class="path path-c"></div>
+
+      <div class="conveyor belt-ab" aria-label="Lieferband A nach B">
+        <div class="belt"></div>
+      </div>
+      <div class="conveyor belt-bc" aria-label="Lieferband B nach C">
+        <div class="belt"></div>
+      </div>
+      <div class="conveyor belt-cs" aria-label="Lieferband C zum Server">
+        <div class="belt"></div>
+      </div>
+
+      <div class="building plant-a" aria-label="Werk Nord">
+        <div class="block base">
+          <div class="face top"></div>
+          <div class="face front"></div>
+          <div class="face side"></div>
+          <div class="face left"></div>
+          <div class="face back"></div>
+          <div class="face bottom"></div>
+        </div>
+        <div class="block module wing">
+          <div class="face top"></div>
+          <div class="face front"></div>
+          <div class="face side"></div>
+          <div class="face left"></div>
+          <div class="face back"></div>
+          <div class="face bottom"></div>
+        </div>
+        <div class="block tower short">
+          <div class="face top"></div>
+          <div class="face front"></div>
+          <div class="face side"></div>
+          <div class="face left"></div>
+          <div class="face back"></div>
+          <div class="face bottom"></div>
+        </div>
+        <div class="label">Werk Nord</div>
+      </div>
+
+      <div class="building plant-b" aria-label="Werk Mitte">
+        <div class="block base deep">
+          <div class="face top"></div>
+          <div class="face front"></div>
+          <div class="face side"></div>
+          <div class="face left"></div>
+          <div class="face back"></div>
+          <div class="face bottom"></div>
+        </div>
+        <div class="block module ridge">
+          <div class="face top"></div>
+          <div class="face front"></div>
+          <div class="face side"></div>
+          <div class="face left"></div>
+          <div class="face back"></div>
+          <div class="face bottom"></div>
+        </div>
+        <div class="block tower tall">
+          <div class="face top"></div>
+          <div class="face front"></div>
+          <div class="face side"></div>
+          <div class="face left"></div>
+          <div class="face back"></div>
+          <div class="face bottom"></div>
+        </div>
+        <div class="label">Werk Mitte</div>
+      </div>
+
+      <div class="building plant-c" aria-label="Werk Süd">
+        <div class="block base">
+          <div class="face top"></div>
+          <div class="face front"></div>
+          <div class="face side"></div>
+          <div class="face left"></div>
+          <div class="face back"></div>
+          <div class="face bottom"></div>
+        </div>
+        <div class="block module">
+          <div class="face top"></div>
+          <div class="face front"></div>
+          <div class="face side"></div>
+          <div class="face left"></div>
+          <div class="face back"></div>
+          <div class="face bottom"></div>
+        </div>
+        <div class="block tower mid">
+          <div class="face top"></div>
+          <div class="face front"></div>
+          <div class="face side"></div>
+          <div class="face left"></div>
+          <div class="face back"></div>
+          <div class="face bottom"></div>
+        </div>
+        <div class="label">Werk Süd</div>
+      </div>
+
+      <div class="building server" aria-label="Servercampus">
+        <div class="block base deep">
+          <div class="face top"></div>
+          <div class="face front"></div>
+          <div class="face side"></div>
+          <div class="face left"></div>
+          <div class="face back"></div>
+          <div class="face bottom"></div>
+        </div>
+        <div class="block cluster tower">
+          <div class="face top"></div>
+          <div class="face front"></div>
+          <div class="face side"></div>
+          <div class="face left"></div>
+          <div class="face back"></div>
+          <div class="face bottom"></div>
+        </div>
+        <div class="block stack">
+          <div class="face top"></div>
+          <div class="face front"></div>
+          <div class="face side"></div>
+          <div class="face left"></div>
+          <div class="face back"></div>
+          <div class="face bottom"></div>
+        </div>
+        <div class="label">Servercampus</div>
+      </div>
+
+      <div class="building ai-factory" aria-label="KI Fabrik">
+        <div class="block base">
+          <div class="face top"></div>
+          <div class="face front"></div>
+          <div class="face side"></div>
+          <div class="face left"></div>
+          <div class="face back"></div>
+          <div class="face bottom"></div>
+        </div>
+        <div class="block ring">
+          <div class="face top"></div>
+          <div class="face front"></div>
+          <div class="face side"></div>
+          <div class="face left"></div>
+          <div class="face back"></div>
+          <div class="face bottom"></div>
+        </div>
+        <div class="block dome">
+          <div class="face top"></div>
+          <div class="face front"></div>
+          <div class="face side"></div>
+          <div class="face left"></div>
+          <div class="face back"></div>
+          <div class="face bottom"></div>
+        </div>
+        <div class="label">KI Fabrik</div>
+      </div>
+
+      <div class="station node-a">Knoten A</div>
+      <div class="station node-b">Knoten B</div>
+      <div class="station node-c">Knoten C</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
